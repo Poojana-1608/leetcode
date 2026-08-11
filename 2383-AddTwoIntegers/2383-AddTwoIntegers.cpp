@@ -1,0 +1,9 @@
+// Last updated: 8/11/2026, 11:29:57 AM
+class Solution {
+public:
+    int sum(int num1, int num2) {
+         int s=num1+num2;
+        return s;
+        
+    }
+};
