@@ -1,0 +1,17 @@
+// Last updated: 8/11/2026, 11:36:14 AM
+class Solution {
+    public void sortColors(int[] arr) {
+        int n=arr.length;
+        for(int i=0;i<n;i++){
+            for(int j=i+1;j<n;j++){
+                if(arr[i]>arr[j]){
+                    int temp=arr[j];
+                    arr[j]=arr[i];
+                    arr[i]=temp;
+                }
+            }
+        }
+    
+    }
+    
+}
