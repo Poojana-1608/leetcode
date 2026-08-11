@@ -1,0 +1,15 @@
+// Last updated: 8/11/2026, 11:30:24 AM
+class Solution {
+    public int arraySign(int[] nums) {
+        int negative=0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]==0){
+                return 0;
+            }
+            if(nums[i]<0){
+                negative++;
+            }
+        }
+        return(negative%2==0) ?1:-1;    
+        }
+}
