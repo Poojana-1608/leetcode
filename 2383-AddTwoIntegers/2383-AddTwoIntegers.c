@@ -1,0 +1,6 @@
+// Last updated: 8/11/2026, 11:29:51 AM
+int sum(int num1, int num2) {
+    int s=num1+num2;
+    return s;
+    
+}
