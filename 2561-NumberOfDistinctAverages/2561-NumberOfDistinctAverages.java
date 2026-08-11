@@ -1,0 +1,16 @@
+// Last updated: 8/11/2026, 11:29:30 AM
+class Solution {
+    public int distinctAverages(int[] nums) {
+      Arrays.sort(nums);
+      HashSet<Double>set=new HashSet<>();
+      int left=0;
+      int right=nums.length-1;
+      while(left<right){
+        double avg=(nums[left]+nums[right])/2.0;
+        set.add(avg);
+        left++;
+        right--;
+      }
+      return set.size();  
+    }
+}
